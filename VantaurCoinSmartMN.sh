@@ -138,7 +138,7 @@ configureWallet() {
 
     sleep 10
 
-    echo -e "rpcuser=${rpcuser}\nrpcpassword=${rpcpass}\nrpcport=${COINRPCPORT}\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=1\nstaking=0\nmaxconnections=64\nexternalip=${mnip}:${COINPORT}\nmasternodeaddr=${mnip}:${COINPORT}\nmasternode=1\nmasternodeprivkey=${mnkey}" > /root/$COINCORE/$COINCONFIG
+    echo -e "rpcuser=${rpcuser}\nrpcpassword=${rpcpass}\nrpcport=${COINRPCPORT}\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=1\nstaking=0\nmaxconnections=64\nexternalip=${mnip}:${COINPORT}\nmasternodeaddr=${mnip}:${COINPORT}\nmasternode=1\nmasternodeprivkey=${mnkey}\naddnode=207.148.23.182:22813\naddnode=77.81.234.75:22813\naddnode=192.241.150.123:22813\naddnode=173.249.16.205:22813\naddnode=109.248.46.51:22813\naddnode=115.68.47.154:22813\naddnode=207.148.73.10:22813\naddnode=23.95.225.157:22813" > /root/$COINCORE/$COINCONFIG
     echo -e "${NONE}${GREEN}* Completed${NONE}";
 }
 
